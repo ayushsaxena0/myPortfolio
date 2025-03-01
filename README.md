@@ -7,16 +7,16 @@ A personal portfolio website showcasing my skills, projects, and contact informa
 ## Screenshots
 
 ### Hero Section  
-![Hero Section](./hero-section.png)  
+![Hero Section](images/hero-section.png)  
 
 ### About Section  
-![About Section](./about-section.png)  
+![About Section](images/about-section.png)  
 
 ### Projects Section  
-![Projects Section](./project-section.png)  
+![Projects Section](images/project-section.png)  
 
 ### Contact Section  
-![Contact Section](./contact-section.png)  
+![Contact Section](images/contact-section.png)  
 
 ## How It's Made
 
