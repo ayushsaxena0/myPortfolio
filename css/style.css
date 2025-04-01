@@ -43,10 +43,10 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #3F7CAC;
+    background-color: #FFFFFF;
     font-weight: 600;
     height: 80px;
-    color: #322A26;
+    color: #333333;
     position: sticky;
     top: 0;
 }
@@ -67,7 +67,7 @@ header img {
 }
 
 .profile>span:hover {
-    color: #9CA3DB;
+    color: #007BFF;
     cursor: pointer;
 }
 
@@ -82,11 +82,11 @@ nav>ul>li {
 
 nav li>a {
     text-decoration: none;
-    color: #322A26;
+    color: #333333;
 }
 
-a:hover {
-    color: #9CA3DB;
+nav a:hover {
+    color: #007BFF;
     transition: color 0.3s ease-in-out;
 }
 
@@ -103,7 +103,7 @@ p {
 main {
     text-align: center;
     height: calc(100vh - 80px);
-    background-color: #A0CFD3;
+    background-color: #F7F9FC;
 
 }
 
@@ -121,16 +121,20 @@ main>p {
 
 main>a {
     text-decoration: none;
-    color: #322A26;
-    background-color: #F25F5C;
+    color: #FFFFFF;
+    background-color: #007BFF;
     padding: 20px 60px;
     border-radius: 5px;
     font-weight: 500;
     font-size: 20px;
 }
 
+main>a:hover {
+    background-color: #FF4C60;
+}
+
 .about {
-    background-color: #ACBEA3;
+    background-color: #FFFFFF;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -176,8 +180,8 @@ main>a {
 
 .bio>a {
     text-decoration: none;
-    color: #322A26;
-    background-color: #F25F5C;
+    color: #FFFFFF;
+    background-color: #007BFF;
     padding: 15px 40px;
     border-radius: 5px;
     font-weight: 500;
@@ -185,8 +189,10 @@ main>a {
     display: inline-block;
 }
 
-a:hover {
-    color: #D4DFC7;
+bio>a:hover {
+    /* color: #D4DFC7; */
+    background-color: #FF4C60;
+
     transition: color 0.3s ease-in-out;
 }
 
@@ -207,16 +213,17 @@ a:hover {
 }
 
 .skillList>div {
-    background-color: #C9CAD9;
+    background-color: #F7F9FC;
     margin: 8px;
     padding: 13px;
     border-radius: 5px;
-    color: #5D576B;
+    border: 2px solid #007BFF;
+    color: #333333;
     font-weight: 500;
 }
 
 .projects {
-    background-color: #8BAAAD;
+    background-color: #F7F9FC;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -290,8 +297,8 @@ a:hover {
 
 .project-desc>a {
     text-decoration: none;
-    color: #322A26;
-    background-color: #F25F5C;
+    color: #FFFFFF;
+    background-color: #007BFF;
     padding: 7px 20px;
     border-radius: 5px;
     font-weight: 500;
@@ -299,13 +306,13 @@ a:hover {
     display: inline-block;
 }
 
-a:hover {
-    color: #D4DFC7;
+.project-desc>a:hover {
+    background-color: #FF4C60;
     transition: color 0.3s ease-in-out;
 }
 
 .contact {
-    background-color: #B2CEDE;
+    background-color: #FFFFFF;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -322,6 +329,69 @@ a:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.contact-form {
+    width: 100%;
+    max-width: 600px;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.contact-form h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #322A26;
+}
+
+/* Input Fields */
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group input,
+.input-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #E0E0E0;
+    /* Light Gray Border */
+    border-radius: 6px;
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
+    transition: border-color 0.3s ease-in-out;
+}
+
+.input-group input:focus,
+.input-group textarea:focus {
+    border-color: #007BFF;
+    /* Blue Focus Border */
+    outline: none;
+}
+
+.input-group textarea {
+    resize: none;
+}
+
+/* Submit Button */
+button {
+    background-color: #FF4C60;
+    /* Coral */
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 6px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #E04355;
+    /* Darker Coral */
 }
 
 .contact h2 {
@@ -354,25 +424,36 @@ a:hover {
 
 .linkedin {
     color: white;
-    background-color: #0a66c2;
+    background-color: #0077B5;
     padding: 7px 5px 2px 5px;
     border-radius: 3px;
 }
 
 .fa-github {
     color: white;
-    background-color: black;
+    background-color: #24292F;
     padding: 6px;
     border-radius: 5px;
 }
 
 .social>.fa-envelope {
-    color: black;
+    color: #FF4C60;
+    /* background-color: #FF4C60; */
     font-size: 40px;
 }
 
-.social>a:hover {
-    color: #91A3B0;
+.social>.linkedin:hover {
+    background-color: #005C8D;
+    transition: color 0.3s ease-in-out;
+}
+
+.social>.fa-github:hover {
+    background-color: #444;
+    transition: color 0.3s ease-in-out;
+}
+
+.social>.fa-envelope:hover {
+    color: #E04355;
     transition: color 0.3s ease-in-out;
 }
 
